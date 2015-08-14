@@ -15,7 +15,21 @@
             $results = $test_RepeatCounter->countRepeats($input1, $input2);
 
             //Assert
-            $this->assertEquals("a", $results);
+            $this->assertEquals(array(1, "a", "a"), $results);
+        }
+
+        function test_countRepeats_doubleWordString()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "I";
+            $input2 = "I do.";
+
+            //Act
+            $results = $test_RepeatCounter->countRepeats($input1, $input2);
+
+            //Assert
+            $this->assertEquals(array(1, "I", "I do."), $results);
         }
 
     }

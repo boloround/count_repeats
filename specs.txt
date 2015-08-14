@@ -1,7 +1,7 @@
 1. Behavior: User inputs a one-letter word to search for in a single-letter-word string. This is the most basic comparison: a single-letter-word to a single-letter-word string. Search is case-insensitive.
     Input1: a
     Input2: a.
-    Output: 1, "a", "a"
+    Output: 1, "a", "a."
 
 2. Behavior: User inputs a one-letter word to search for in a two-word string. This searches for a single-letter word in a multi-word string.
     Input1: I

@@ -3,8 +3,8 @@
     {
         function countRepeats($word, $string)
         {
-            return $word;
-        /*    //lowercase both inputs
+            //return $word;
+            //lowercase both inputs
             $f_word = strtolower($word);
             $f_string = strtolower($string);
             //strip any punctuation from input string
@@ -18,7 +18,7 @@
                 }
             }
             $result_array = array($count, $word, $string);
-            return $result_array;  */
+            return $result_array;
         }
     }
  ?>
