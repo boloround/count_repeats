@@ -17,6 +17,11 @@
                     $count++;
                 }
             }
+            //Error message if no matches are found
+            if ($count == 0) {
+                $count = "No match. Try again.";
+            }
+
             $result_array = array($count, $word, $string);
             return $result_array;
         }
