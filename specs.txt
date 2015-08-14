@@ -1,34 +1,34 @@
 1. Behavior: User inputs a one-letter word to search for in a single-letter-word string. This is the most basic comparison: a single-letter-word to a single-letter-word string. Search is case-insensitive.
     Input1: a
     Input2: a.
-    Output: 1 match
+    Output: 1, "a", "a"
 
 2. Behavior: User inputs a one-letter word to search for in a two-word string. This searches for a single-letter word in a multi-word string.
     Input1: I
     Input2: I do.
-    Output: 1 match
+    Output: 1, "I", "I do."
 
 3. Behavior: User inputs a two-letter word to search for in a single-word, two-letter-word string. This searches for a two-letter word in a single-word, two-letter-word string.
     Input1: do
     Input2: do.
-    Output: 1 match
+    Output: 1, "do", "do."
 
 4. Behavior: User inputs a two-letter word to search for in a multi-word string. This searches for two-letter-word in a multi-word string.
     Input1: do
     Input2: I do.
-    Output: 1 match
+    Output: 1, "do", "I do."
 
 5. Behavior: User inputs a three-letter word to search for in a multi-word string. This searches for multi-letter words in multi-letter strings.
     Input1: too
     Input2: I do too.
-    Output: 1 match
+    Output: 1, "too", "I do too."
 
 6. Behavior: User inputs a word to be searched for in a string which has multiple instances of the search word. This searches for instances where the searched word may occur more than once.
     Input1: sun
     Input2: Apply sun protection when you go out in the sun.
-    Output: 2 matches
+    Output: 2, "sun", "Apply sun protection when you go out in the sun."
 
-7. Behavior: User inputs a word for in a string but the string contains no instances of the word. This returns a message to the user that their search yielded no matches.
+7. Behavior: User inputs a word to be searched for in a string but the string contains no instances of the word. This returns a message to the user that their search yielded no matches.
     Input1: also
     Input2: I do too.
-    Output: No match. Try again.
+    Output: "No match. Try again.", "also", "I do too."
