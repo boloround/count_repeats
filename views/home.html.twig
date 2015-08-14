@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <meta charset="utf-8">
+        <title>Matching Word Count</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Match-A-Word!</h1>
+            </div>
+            <h2>Search for a word</h2>
+            <p>
+                Ever wondered how many times a particular word appears in your favorite block of text? Now you can find out! Just use the form below. Enter your word in the first box, then enter a block of text in the second box, as little or as much as you'd like.
+            </p>
+            <form action="/results">
+                <div class="form-group">
+                    <label for="word">Enter a word:</label>
+                    <input type="text" name="word" id="word" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="string">Enter a block of text:</label>
+                    <textarea name="string" id="string" rows="3" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

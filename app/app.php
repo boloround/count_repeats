@@ -14,11 +14,11 @@
         return $app['twig']->render('home.html.twig');
     });
 
-    $app->get("/result", function() use ($app) {
+    $app->get("/results", function() use ($app) {
         $this_RepeatCounter = new RepeatCounter;
-        $this_count = $this_RepeatCounter->countRepeats(&_GET['word'], $_GET['string']);
-        return $app['twig']->render('result.html.twig', array('values' => $this_count));
-    })
+        $this_count = $this_RepeatCounter->countRepeats($_GET['word'], $_GET['string']);
+        return $app['twig']->render('results.html.twig', array('values' => $this_count));
+    });
 
     return $app;
  ?>
