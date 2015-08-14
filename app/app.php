@@ -9,11 +9,11 @@
     $app = new Silex\Application();
 
     $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__.'/../views'));
-
+    //Shows the home page with form
     $app->get("/", function() use ($app) {
         return $app['twig']->render('home.html.twig');
     });
-
+    //Gets input from user, sends it to countRepeats function, sends return values to results Twig page
     $app->get("/results", function() use ($app) {
         $this_RepeatCounter = new RepeatCounter;
         $this_count = $this_RepeatCounter->countRepeats($_GET['word'], $_GET['string']);

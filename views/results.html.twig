@@ -16,6 +16,7 @@
                 <h1>Match-A-Word!</h1>
             </div>
             <h1>Here are the results of your search</h1>
+            {# Shows a different result to the user depending on whether or not matches were found #}
             {%  if values[0] == "No match. Try again." %}
             <h4 class="red_text">{{ values[0] }}</h4>
             {% else %}
